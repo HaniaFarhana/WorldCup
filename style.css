@@ -29,7 +29,8 @@ main {
   font-size: 20px;
   opacity: 0.8;
 }
-.bannerDes button {
+.bannerDes button,
+.bt {
   font-size: 20px;
   padding: 15px 30px;
   border-radius: 10px;
@@ -119,9 +120,10 @@ footer {
 }
 .footerContent {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
-  padding-bottom: 100px;
+  padding: 0px 30px 100px 30px;
 }
 .footerContent p {
   font-size: 15px;
@@ -184,4 +186,52 @@ footer {
 }
 .gdetails h2 {
   text-align: center;
+}
+.viewButton {
+  display: none;
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  main {
+    margin: 30px;
+  }
+  .divbanner {
+    padding: 0 30px;
+    padding-top: 20px;
+  }
+  .bannerDes {
+    padding-left: 0;
+  }
+  .bannerDes h1 {
+    font-size: 40px;
+  }
+  .cardcontainer {
+    margin-top: 50px;
+  }
+  .cardcontent {
+    display: block;
+  }
+  .menuCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 0;
+  }
+  .menuCard a {
+    border: 1px solid rgb(212, 204, 204);
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nocard-for-tab {
+    display: none;
+  }
+  .viewButton {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .footerContent p {
+    font-size: 20px;
+  }
 }
