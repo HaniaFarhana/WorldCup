@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.navbar {
+  display: none;
+}
 main {
   margin: 100px 150px;
 }
@@ -219,6 +222,7 @@ footer {
   .cardcontent {
     display: block;
   }
+
   .menuCard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -248,5 +252,97 @@ footer {
   }
   .ggroups {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ----------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  main {
+    margin: 10px;
+  }
+  .divbanner {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-items: center;
+    padding: 0;
+  }
+  .bannerDes {
+    padding: 20px;
+    padding-top: 40px;
+  }
+  .bannerDes h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .bannerDes p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .btr {
+    text-align: center;
+  }
+  .bannerImage {
+    width: 100%;
+    text-align: center;
+  }
+  .bannerImage img {
+    width: auto;
+    margin-bottom: -3px;
+  }
+  .cardcontent {
+    display: block;
+  }
+  .menuCard {
+    background-color: white;
+  }
+  .menuCard a {
+    border: 1px solid rgb(204, 199, 199);
+  }
+  .cardcontainer {
+    margin-top: 10px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .nocard-for-ph {
+    display: none;
+  }
+  .viewButton {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .footerHead {
+    padding: 50px 50px;
+    padding-bottom: 10px;
+  }
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+  }
+  .footerContent p {
+    font-size: 20px;
+  }
+  .navbar {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .time {
+    font-weight: 600;
+  }
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+  .gcard {
+    grid-template-columns: 1fr;
+  }
+  .ggroups {
+    grid-template-columns: 1fr 1fr;
   }
 }
