@@ -167,21 +167,30 @@ footer {
 }
 .gcard {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: 1fr 6fr;
+  align-items: center;
+  border: 1px solid rgb(186, 175, 175);
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.ggroups {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 25px;
   align-items: center;
   padding: 20px;
-  border: 1px solid rgb(186, 175, 175);
-  border-radius: 10px;
+}
+.gcontent {
+  width: 100%;
+}
+.gImg {
+  width: 100%;
 }
 .gname h2 {
   font-size: 25px;
   text-align: center;
 }
-.gcontent {
-  width: 100%;
-}
-.gcontent img {
+.gImg img {
   width: 100%;
 }
 .gdetails h2 {
@@ -233,5 +242,11 @@ footer {
   }
   .footerContent p {
     font-size: 20px;
+  }
+  .gcard {
+    display: block;
+  }
+  .ggroups {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
